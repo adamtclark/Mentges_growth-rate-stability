@@ -1,17 +1,11 @@
 %% Empirical part: loading data and plotting figures
-
-% %%% For publication of code: remove everything followed/preceded by 
-% triple percent signs! %%%
+%
+% Authors: Andrea Mentges (2019) and Adam Clark (2023)
 
 clear all
 
-%fdir = '/Users/am41xite/Nextcloud/Figures/2020-03_Stability'; %%%
-fdir = '/Users/aclark/Dropbox/Projects/071_Mentges_stability/src/figures';
-
-%cd('/Users/am41xite/Nextcloud/Codes/Matlab_Project_III') %%%
-cd('/Users/aclark/Dropbox/Projects/071_Mentges_stability/src/growth-rate-stability') 
-
-addpath(genpath('/Users/aclark/Dropbox/Projects/071_Mentges_stability/src/mentges_matlab')) 
+fdir = mydirectory; % paste user directory here;
+addpath(genpath('MYDIRECTORY')) % add folder with code to path 
 
 %% Load data
 
@@ -105,9 +99,6 @@ ax2.XLabel.Position(2) = -30;
 ax3.XLabel.Position(2) = -30;
 ax4.XLabel.Position(2) = -30;
 
-%%%
-export_fig(sprintf('%s/case_stuy2_ratio-metrics-raw.png', fdir), '-r150')
-%%% export_fig(sprintf('%s/case_stuy2_ratio-metrics-raw_with-outliers.png', fdir), '-r150')
 
 %% Figure S1: Boxplots - Four different resilience metrics
 
@@ -173,8 +164,6 @@ ax2.XLabel.Position(2) = -30;
 ax3.XLabel.Position(2) = -30;
 ax4.XLabel.Position(2) = -30;
 
-%%%
-export_fig(sprintf('%s/case_stuy2_ratio-metrics-raw_resil-comparison.bmp', fdir), '-r150')
 
 %% Figure 6: Boxplots - Corrected stability
 
@@ -255,8 +244,6 @@ ax2.XLabel.Position(2) = -30;
 ax3.XLabel.Position(2) = -30;
 ax4.XLabel.Position(2) = -30;
 
-%%%
-export_fig(sprintf('%s/case_stuy2_ratio-metrics-corr.png', fdir), '-r150')
 
 %%  Figure S2: Boxplots of published stability
 % These are the stability measures as reported in the Hillebrand2020 study.
@@ -326,9 +313,6 @@ ax2.XLabel.Position(2) = -30;
 ax3.XLabel.Position(2) = -30;
 ax4.XLabel.Position(2) = -30;
 
-%%%
-export_fig(sprintf('%s/case_stuy2_original_estimates_no-mistake.bmp', fdir), '-r150')
-%%% export_fig(sprintf('%s/case_stuy2_incl_compositional.bmp', fdir), '-r150')
 
 %% Figure S3: Differences between fast-growers and slow-growers
 
