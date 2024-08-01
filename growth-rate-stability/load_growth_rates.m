@@ -1,5 +1,7 @@
 %% Adds the compiled growth rate estimates
 %
+% Author: Andrea Mentges, 2020
+%
 % For each organism group included in the Hillebrand & Kunze meta-data (T),
 % growth rate estimates are loaded from a compilation of published growth
 % rates (compiled by Andrea Mentges 2020).
