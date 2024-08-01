@@ -1,5 +1,7 @@
 %% Rescale to account for growth rate in resilience and recovery
 %
+% Author: Andrea Mentges, 2020
+%
 % Input arguments:
 %   t = matrix with sampling time points, each column is a different
 %   organism
