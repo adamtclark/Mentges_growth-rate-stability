@@ -1,6 +1,8 @@
 %% Helper function for plotting of boxplots
 % Plots the values in y as boxplots for each group along log(x), and
 % adds two colored lines indicating mean and median.
+%
+% Author: Andrea Mentges, 2019
 
 function [axh] = fplot_boxplot_log(y,x, varargin)
 
