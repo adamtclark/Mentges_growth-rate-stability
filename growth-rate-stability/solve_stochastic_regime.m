@@ -1,5 +1,7 @@
 %% Function for solving ODE with a stochastic disturbance regime on top
 %
+% Author: Andrea Mentges, 2020
+%
 % Time is split into intervals (equidistant or random length).
 % At the beginning of each interval, an event happens, which
 % influences the starting abundance.
