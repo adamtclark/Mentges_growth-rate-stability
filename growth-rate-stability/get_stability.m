@@ -1,5 +1,7 @@
 %% Get stability measures from timeseries with pulse disturbance
 %
+% Authors: Andrea Mentges (2020), Adam Clark (2023)
+%
 % Input arguments:
 %   t = vector with sampling time points
 %   N = vector with biomass from sampling
