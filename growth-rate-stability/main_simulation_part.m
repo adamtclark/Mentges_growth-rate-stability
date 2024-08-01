@@ -1,27 +1,15 @@
 %% Simulation part: Generating data and plotting figures
+% Authors: Andrea Mentges (2020), Adam Clark (2023)
 
 clear all
 close all
-
-% %%% For publication of code: remove everything followed/preceded by 
-% triple percent signs! %%%
-
-% set current folder
-%cd('/Users/am41xite/Nextcloud/Codes/Matlab_Project_III') %%%
-cd('/Users/aclark/Dropbox/Projects/071_Mentges_stability/src/growth-rate-stability') 
-
-% set figure directory
-%fdir = '/Users/am41xite/Nextcloud/Figures/2020-09_Stability'; %%%
-fdir = '/Users/aclark/Dropbox/Projects/071_Mentges_stability/src/figures';
 
 % set default axes font size
 set(groot,'defaultAxesFontSize', 11)
 set(groot,'defaultTextFontSize', 12)
 
 % add paths so functions in these folders are found by Matlab
-%addpath(genpath('/Users/am41xite/Nextcloud/Codes/Matlab_Project_II')) %%%
-%addpath(genpath('/Users/am41xite/Nextcloud/Codes/Matlab_Functions')) %%%
-addpath(genpath('/Users/aclark/Dropbox/Projects/071_Mentges_stability/src/mentges_matlab')) 
+addpath(genpath('DIRECTORY'))
 
 %% Plotting parameters
 
@@ -166,8 +154,6 @@ l = legend(ax1, [pf1 ps1], 'fast grower','slow grower', 'location', 'eastoutside
 l.Position = [0.61,0.88,0.28,0.06];
 l.Box = 'off';
 
-%%%
-export_fig(sprintf('%s/figure1_vary_r_zoom.bmp', fdir), '-r150')
 
 %% Compute stability
 
@@ -350,9 +336,6 @@ l = legend(ax1, [pf1 ps1], 'fast-grower','slow-grower', 'subset to use', 'locati
 l.Position = [0.455347313237222,0.708484848484848,0.280000000000000,0.184848484848485];
 l.Box = 'off';
 
-%%%
-export_fig(sprintf('%s/illustrate_resilience_rescaling.bmp', fdir), '-r150')
-
 %% Figure 4: Illustrate resistance rescaling
 
 idx_fast_new = ismember(t_slow, [1 3.5:1.5:19.5]);
@@ -454,8 +437,6 @@ l = legend(ax1, [pf1 ps1], 'fast-grower','slow-grower', 'subset to use', 'locati
 l.Position = [0.5,0.708484848484848,0.280000000000000,0.184848484848485];
 l.Box = 'off';
 
-%%%
-export_fig(sprintf('%s/illustrate_resistance_rescaling.bmp', fdir), '-r150')
 
 %% Figure 2: Illustrate CV correction
 
@@ -485,11 +466,6 @@ export_fig(sprintf('%s/illustrate_resistance_rescaling.bmp', fdir), '-r150')
 % Option B: Load simulation data
 load('workspace_CV_correction_2020-04-21')
 fdir = '/Users/aclark/Dropbox/Projects/071_Mentges_stability/src/figures';
-
-
-% load('workspace_CV_correction_2020-04-21_tend-double') %%%
-% load('workspace_CV_correction_2020-04-21_lambda-double') %%%
-% load('workspace_CV_correction_2020-04-21_nvars1000') %%%
 
 invariability = 1./CVs;
 
@@ -548,9 +524,6 @@ l = legend('Stochastic simulations', 'Analytical solution',...
 l.Position = [0.499475341028332,0.674657534246575,0.1594998,0.20890441];
 
 std(CVs)
-
-%%%
-export_fig(sprintf('%s/illustrate_CV_solution.bmp', fdir), '-r150')
 
 
 %% Supplement: Conceptual simulation of effect of K
@@ -679,9 +652,6 @@ annotation('textbox', [0.62, 0.3, 0.35, 0], 'string', 'low temporal stability',.
 l = legend(ax1, [pf1 ps1], 'high capacity','low capacity', 'location', 'eastoutside');
 l.Position = [0.61,0.88,0.28,0.06];
 l.Box = 'off';
-
-%%%
-export_fig(sprintf('%s/figure2_vary_K.bmp', fdir), '-r150')
 
 %% Table S1: Compute stability for simulation of K
 
