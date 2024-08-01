@@ -1,6 +1,8 @@
 %% Wrap function for solving ODE of logistic growth model
 % Assigns input arguments and calls the ODE solver.
 %
+% Author: Andrea Mentges, 2020
+%
 % INPUT:
 % tspan, vector containing either [start, end] of time series or 
 %   [start, stepwidth, end]. In the first case, if no stepwidth is 
