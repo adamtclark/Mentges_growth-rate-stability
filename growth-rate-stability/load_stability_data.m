@@ -4,6 +4,8 @@
 % (available at datadryad.org/stash/dataset/doi:10.5061/dryad.cz8w9gj09)
 % and calculates raw and "corrected" stability estimates from this.
 %
+% Authors: Andrea Mentges (2020), Adam Clark (2023)
+%
 % OUTPUT:
 % - structure "M" with additional columns for the raw and corrected
 % stability estimates (based on the log-response ratios)
