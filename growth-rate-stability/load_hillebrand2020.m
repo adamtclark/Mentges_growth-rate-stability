@@ -3,9 +3,11 @@
 % Loads the metadata (reference, habitat, organism, etc) for all studies
 % included in the Hillebrand & Kunze 2020 data set.
 %
+% Authors: Andrea Mentges (2020), Adam Clark (2023)
+%
 % This data is taken from Appendix S1 of the original study:
 %
-%﻿Hillebrand H, Kunze C. 2020. "Meta-analysis on pulse disturbances reveals
+%Hillebrand H, Kunze C. 2020. "Meta-analysis on pulse disturbances reveals
 % differences in functional and compositional recovery across ecosystems." 
 % Ecology Letters 23:575–585.
 %
